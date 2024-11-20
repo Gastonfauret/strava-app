@@ -3,8 +3,7 @@
     "name": "strava-app",
     "slug": "strava-app",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "orientation": "portrait",    
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -12,15 +11,14 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+      "adaptiveIcon": {        
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gastonfauret.stravaapp"
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "output": "static"      
     },
     "plugins": [
       "expo-router",
@@ -36,6 +34,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ba35b163-12e3-4a84-9ab3-4b18fa98e437"
+      }
+    },
+    "owner": "gastonfauret"
   }
 }
